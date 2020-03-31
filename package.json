@@ -1,11 +1,12 @@
 {
-  "name": "My-Portfolio",
+  "name": "my-portfolio",
   "version": "1.0.0",
   "main": "server/server.js",
   "engines": {
     "node": ">=6"
   },
   "scripts": {
+    "build": "parcel build client/src/html/index.html",
     "lint": "eslint .",
     "start": "node .",
     "posttest": "npm run lint"
@@ -14,11 +15,20 @@
     "compression": "^1.0.3",
     "cors": "^2.5.2",
     "helmet": "^3.10.0",
+    "loopback": "^3.22.0",
     "loopback-boot": "^2.6.5",
-    "serve-favicon": "^2.0.1",
-    "strong-error-handler": "^3.0.0",
     "loopback-component-explorer": "^6.2.0",
-    "loopback": "^3.22.0"
+    "parcel-bundler": "^1.12.3",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.2.0",
+    "react-router-dom": "^5.1.2",
+    "redux": "^4.0.5",
+    "redux-promise-middleware": "^6.1.2",
+    "redux-thunk": "^2.3.0",
+    "request-promise": "^4.2.5",
+    "serve-favicon": "^2.0.1",
+    "strong-error-handler": "^3.0.0"
   },
   "devDependencies": {
     "eslint": "^3.17.1",
@@ -29,5 +39,5 @@
     "url": ""
   },
   "license": "UNLICENSED",
-  "description": "My-Portfolio"
+  "description": "my-portfolio"
 }

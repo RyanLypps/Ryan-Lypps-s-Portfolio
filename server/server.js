@@ -7,8 +7,16 @@
 
 const loopback = require('loopback');
 const boot = require('loopback-boot');
+const path = require('path')
+var errorHandler = require('strong-error-handler');
+
 
 const app = module.exports = loopback();
+
+app.use(errorHandler({
+  debug: true,
+  log: true,
+}));
 
 app.start = function() {
   // start the web server
@@ -32,3 +40,7 @@ boot(app, __dirname, function(err) {
   if (require.main === module)
     app.start();
 });
+
+// app.get('/', (req, res) => {
+//   res.sendFile(path.join(__dirname, '../dist/index.html'));
+// });
