@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import '../../../css/style.scss';
+
 
 class MainPage extends Component {
 
   render() {
     return (
       <div className="container">
-              <header><h1 className="h1">Ryan Lypps, I am your master. Finally Ready and connected.</h1></header>
+             <h1 className='header'>Ryan Lypps, I am your master. Finally Ready and connected.</h1>
       </div>
     );
   }
