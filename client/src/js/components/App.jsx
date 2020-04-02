@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
-// import { connect } from 'react-redux';
+import React from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import MainPage from './MainPage/MainPage';
 
-export default class App extends Component {
-
-  render() {
-    return (
-      <div className="container">
-              <header><h1 className="h1">Ryan, It Works!!! Hello againdlldll</h1></header>
-      </div>
-    );
-  }
+function App(props) {
+  return (
+    <Router basename="/">
+      <Route exact path='/' component={ MainPage } />
+      {/* <Route path='/admin/student-summary/:id' component={ StudentStats } /> */}
+    </Router>
+  );
 }
 
+export default App;
