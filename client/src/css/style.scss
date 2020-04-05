@@ -1,5 +1,24 @@
-.header {
-    color: lightcoral;
+body {
+  background: linear-gradient(to right, #b4ee99, #b4cfa7, #9ed5f0, #6dbde6);
+}
+
+.header1 {
+    color: rgb(19, 18, 18);
     letter-spacing: 0.1em;
     text-transform: uppercase;
+    font-size: 75px;
+    font-family: 'Times New Roman';
   }
+
+.header2 {
+    color: rgb(255, 255, 255);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-size: 75px;
+    font-family: 'Times New Roman';
+  }
+
+.hire:hover {
+  color: white;
+  box-shadow: 0 10px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}

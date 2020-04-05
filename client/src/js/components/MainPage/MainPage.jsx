@@ -8,7 +8,15 @@ class MainPage extends Component {
   render() {
     return (
       <div className="container">
-             <h1 className='header'>Ryan Lypps, I am your master. Finally Ready and connected.</h1>
+          <span className='header1'>Ryan  </span>
+          <span className='header2'>Lypps</span>
+          <button
+          className='hire'
+           style={{ backgroundColor: 'transparent', 
+           fontSize: 40, borderColor: 'black', 
+           borderWidth: 2,
+           cursor: 'hand' }}>
+             Hire me</button>
       </div>
     );
   }
