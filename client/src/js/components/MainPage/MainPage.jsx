@@ -13,7 +13,7 @@ class MainPage extends Component {
           <button
           className='hire'
            style={{ backgroundColor: 'transparent', 
-           fontSize: 40, borderColor: 'black', 
+           fontSize: 35, borderColor: 'black', 
            borderWidth: 2,
            cursor: 'hand' }}>
              Hire me</button>
