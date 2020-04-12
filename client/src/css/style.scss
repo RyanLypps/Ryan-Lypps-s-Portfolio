@@ -1,5 +1,9 @@
+$white: rgb(255, 255, 255);
+$hover: rgb(54, 54, 54);
+$background-color: #b4ee99, #b4cfa7, #9ed5f0, #6dbde6;
+
 body {
-  background: linear-gradient(to right, #b4ee99, #b4cfa7, #9ed5f0, #6dbde6);
+  background: linear-gradient(to right, $background-color);
 }
 
 .header1 {
@@ -11,19 +15,38 @@ body {
   }
 
 .header2 {
-    color: rgb(255, 255, 255);
+    color: $white;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     font-size: 75px;
     font-family: 'Times New Roman';
   }
+  
+.hire {
+  font-size: 35px;
+  border-color: black;
+  border-width: 2px;
+  cursor: 'hand';
+  border-block-end-width: 3px;
+  border-block-start-width: 3px;
+  font-family: Times New Roman;
+  background-color: transparent;
 
-.hire:hover {
-  color: white;
-  box-shadow: 0 10px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-  opacity: .75;
-  // animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  &:hover {
+    color: $hover;
+    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    opacity: .75;
+    // animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  }
+
+  &:active {
+    opacity: 1;
+    transform: scale(0.75) translateY(5%);
 }
+
+}
+
+
 
 // @keyframes shake {
 //   10%, 90% {
@@ -42,8 +65,3 @@ body {
 //     transform: translate3d(4px, 0, 0);
 //   }
 // }
-
-.hire:active {
-  opacity: 1;
-  transform: scale(0.75) translateY(5%);
-}
