@@ -1,15 +1,9 @@
-// Copyright IBM Corp. 2016,2019. All Rights Reserved.
-// Node module: loopback-workspace
-// This file is licensed under the MIT License.
-// License text available at https://opensource.org/licenses/MIT
-
 'use strict';
 
 const loopback = require('loopback');
 const boot = require('loopback-boot');
 const path = require('path')
 var errorHandler = require('strong-error-handler');
-
 
 const app = module.exports = loopback();
 
@@ -41,6 +35,10 @@ boot(app, __dirname, function(err) {
     app.start();
 });
 
-// app.get('/', (req, res) => {
-//   res.sendFile(path.join(__dirname, '../dist/index.html'));
-// });
+app.get('/about-me', (req, res) => {
+  res.sendFile(path.join(__dirname, '../dist/index.html'));
+});
+
+// app.get('/about-me', (req, res) => {
+  //   res.sendStatus(200);
+  // });
