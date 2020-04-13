@@ -1,6 +1,10 @@
 $white: rgb(255, 255, 255);
-$hover: rgb(54, 54, 54);
+$hover: rgb(99, 97, 97);
 $background-color: #b4ee99, #b4cfa7, #9ed5f0, #6dbde6;
+
+@mixin border-radius($value) {
+  border-radius: $value;
+}
 
 body {
   background: linear-gradient(to right, $background-color);
@@ -10,7 +14,7 @@ body {
     color: rgb(19, 18, 18);
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    font-size: 75px;
+    font-size: 30px;
     font-family: 'Times New Roman';
   }
 
@@ -18,11 +22,12 @@ body {
     color: $white;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    font-size: 75px;
+    font-size: 30px;
     font-family: 'Times New Roman';
   }
   
 .hire {
+  @include border-radius(10px);
   font-size: 35px;
   border-color: black;
   border-width: 2px;
@@ -30,38 +35,69 @@ body {
   border-block-end-width: 3px;
   border-block-start-width: 3px;
   font-family: Times New Roman;
-  background-color: transparent;
+  background: transparent;
+
+  transition: all 300ms ease-in-out 0.5ms;
+  -webkit-transition: all 300ms ease-in-out 0.5ms;
 
   &:hover {
     color: $hover;
     box-shadow: 0 10px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
     opacity: .75;
-    // animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    border-color: rgb(0, 0, 0);
   }
 
   &:active {
     opacity: 1;
     transform: scale(0.75) translateY(5%);
+  }
 }
 
-}
-
-
-
-// @keyframes shake {
-//   10%, 90% {
-//     transform: translate3d(-1px, 0, 0);
-//   }
-  
-//   20%, 80% {
-//     transform: translate3d(2px, 0, 0);
+// @keyframes pulse {
+//   from {
+//       transform: scale(.5);
+//       opacity: .5;
 //   }
 
-//   30%, 50%, 70% {
-//     transform: translate3d(-4px, 0, 0);
-//   }
-
-//   40%, 60% {
-//     transform: translate3d(4px, 0, 0);
+//   to {
+//       transform: scale(1);
+//       opacity: 1;
 //   }
 // }
+
+// .pulse {
+//   animation: pulse 500ms;
+//   animation-iteration-count: infinite;
+// }
+
+@keyframes pulse {
+  0% {
+    transform: translate3d(0, 0, 0);
+    color: blue;
+  }
+  
+  25% {
+    transform: translate3d(100px, 0, 0);
+    transform: scale(0.25) translateY(5%);
+    color: black
+  }
+
+  // 50% {
+  //   transform: translate3d(0, 0, 0);
+  //   color: red;
+  // }
+
+  // 75% {
+  //   transform: translate3d(100px, 0, 0);
+  //   transform: scale(0.25) translateY(5%);
+  //   color: black;
+  // }
+}
+
+.pulse {
+  animation: pulse 2000ms;
+  animation-iteration-count: 1;
+  font-size: 4em;
+  font-family: Times New Roman;
+  font-weight: 150;
+}
