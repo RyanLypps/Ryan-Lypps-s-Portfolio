@@ -22,8 +22,9 @@ class MainPage extends Component {
             <Header />
           </div>
           <div className="col-lg-6">
-            <button className='hire' onClick={this.keyframes}>Hire me</button>
-            {/* <div className='pulse'>Ciera</div> */}
+            <button className='hire' onClick={this.keyframes}>About me</button>
+            <div className='pulse'>Ciera</div>
+            <a href="https://placeholder.com"><img src="https://via.placeholder.com/150" fluid /></a>
           </div>
         </div>
       </div>
