@@ -1,6 +1,6 @@
 $white: rgb(255, 255, 255);
 $hover: rgb(99, 97, 97);
-$background-color: #b4ee99, #b4cfa7, #9ed5f0, #6dbde6;
+$background-color: #bdbebb, #6e6c6c, #464545, #0f0f0f;
 
 @mixin border-radius($value) {
   border-radius: $value;
@@ -14,7 +14,7 @@ body {
     color: rgb(19, 18, 18);
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 130px;
     font-family: 'Times New Roman';
   }
 
@@ -22,13 +22,13 @@ body {
     color: $white;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 130px;
     font-family: 'Times New Roman';
   }
   
 .hire {
   @include border-radius(10px);
-  font-size: 35px;
+  font-size: 30px;
   border-color: black;
   border-width: 2px;
   cursor: 'hand';
@@ -43,7 +43,7 @@ body {
   &:hover {
     color: $hover;
     box-shadow: 0 10px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-    opacity: .75;
+    opacity: .90;
     border-color: rgb(0, 0, 0);
   }
 
@@ -73,31 +73,15 @@ body {
 @keyframes pulse {
   0% {
     transform: translate3d(0, 0, 0);
-    color: blue;
   }
   
   25% {
     transform: translate3d(100px, 0, 0);
-    transform: scale(0.25) translateY(5%);
-    color: black
+    transform: scale(1.50) translateY(5%);
   }
-
-  // 50% {
-  //   transform: translate3d(0, 0, 0);
-  //   color: red;
-  // }
-
-  // 75% {
-  //   transform: translate3d(100px, 0, 0);
-  //   transform: scale(0.25) translateY(5%);
-  //   color: black;
-  // }
 }
 
 .pulse {
-  animation: pulse 2000ms;
-  animation-iteration-count: 1;
-  font-size: 4em;
-  font-family: Times New Roman;
-  font-weight: 150;
+  animation: pulse 1000ms;
+  animation-iteration-count: 3;
 }
