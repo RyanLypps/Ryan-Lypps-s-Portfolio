@@ -24,6 +24,11 @@ class MainPage extends Component {
           {/* <div className='pulse'>Ciera</div> */}
           <Header />
         </div>
+        {/* <img src='https://via.placeholder.com/150' className='pulse' /> */}
+        <div id="cf3">
+          <img class="bottom" src="https://via.placeholder.com/150" />
+          <img class="top" src="https://avatarfiles.alphacoders.com/310/thumb-31046.jpg" />
+        </div>
         <br></br>
         <br></br>
         <div className='row justify-content-center'>
