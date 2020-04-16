@@ -73,6 +73,7 @@ body {
 @keyframes pulse {
   0% {
     transform: translate3d(0, 0, 0);
+
   }
   
   25% {
@@ -83,5 +84,115 @@ body {
 
 .pulse {
   animation: pulse 1000ms;
-  animation-iteration-count: 3;
+  animation-iteration-count: 1;
+}
+
+// .slide-container {
+//   width: 800px;
+//   height: 600px;
+//   margin-left: auto;
+//   margin-right: auto;
+//   overflow: hidden;
+//   text-align: center;
+// }
+
+// .image-container{
+//   width: 5000px;
+//   height: 300px;
+//   position: relative;
+//   transition: left 5000ms;
+//   -webkit-transition: left 5000ms;
+// }
+
+// .slider-image {
+//   float: left;
+//   margin: 0px;
+//   padding: 0px;
+// }
+
+// .button-container {
+//   top: -20px;
+//   position: relative;
+// }
+
+// .slider-button {
+// display: inline-block;
+// height: 10px;
+// width: 10px;
+// border-radius: 5px;
+// background-color: white;
+// }
+
+// #slider-image-1 {
+//   target ~ .image-container {
+//     left: 0px;
+//   }
+// }
+// #slider-image-2 {
+//   target ~ .image-container {
+//     left: -800px;
+//   }
+// }
+// #slider-image-3 {
+//   target ~ .image-container {
+//     left: -1600px;
+//   }
+// }
+// <div className='slide-container'>
+// <span id='slider-image-1'></span>
+// <span id='slider-image-2'></span>
+// <span id='slider-image-3'></span>
+// <div className='image-container'>
+//   <img src='https://via.placeholder.com/150' className='slider-image' />
+//   <img src='https://via.placeholder.com/300' className='slider-image' />
+//   <img src='https://via.placeholder.com/450' className='slider-image' />
+// </div>
+// <div className='button-container'>
+//   <a href='#slider-image-1' className='slider-button' />
+//   <a href='#slider-image-2' className='slider-button' />
+//   <a href='#slider-image-3' className='slider-button' />
+// </div>
+// </div>
+
+#cf {
+  position:relative;
+  height:150px;
+  width:150px;
+  margin:0 auto;
+}
+
+#cf3 img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+// #cf img.top:hover {
+//   opacity:0;
+// }
+
+@keyframes cf3FadeInOut {
+  0% {
+  opacity:1;
+}
+45% {
+opacity:1;
+}
+55% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
+}
+
+#cf3 img.top {
+animation-name: cf3FadeInOut;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 10s;
+animation-direction: alternate;
 }
