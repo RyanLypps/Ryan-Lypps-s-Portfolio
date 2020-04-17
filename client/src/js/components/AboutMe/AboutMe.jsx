@@ -11,8 +11,6 @@ class AboutMe extends Component {
     return (
       <div className="container">
         <div>Ryan is awesome!</div>
-        <i className="fas fa-home"></i>
-        <i className="fas fa-camera"></i>
         {/* <a href="/"><img src="https://via.placeholder.com/150" /></a> */}
         {/* <button style={{border: 'none', background: 'none', fontSize: 50, fontFamily: 'Times New Roman', letterSpacing: 4 }}>RL</button> */}
         <a style={{ color: 'black' }} href="/"><FontAwesomeIcon icon={ faGhost } size={"3x"} /></a>

@@ -22,18 +22,18 @@ class MainPage extends Component {
         <div className='row'>
           {/* <a style={{ color: 'black' }} href="/about-me"><FontAwesomeIcon icon={faGhost} size={"3x"} /></a> */}
           {/* <div className='pulse'>Ciera</div> */}
-          <Header />
+            <Header />
         </div>
         {/* <img src='https://via.placeholder.com/150' className='pulse' /> */}
-        <div id="cf3">
-          <img class="bottom" src="https://via.placeholder.com/150" />
-          <img class="top" src="https://avatarfiles.alphacoders.com/310/thumb-31046.jpg" />
-        </div>
+        {/* <div id="cf3">
+          <img className="bottom" src="https://via.placeholder.com/150" />
+          <img className="top" src="https://avatarfiles.alphacoders.com/310/thumb-31046.jpg" />
+        </div> */}
         <br></br>
         <br></br>
         <div className='row justify-content-center'>
           <div className="col">
-            <div style={{ marginTop: '15em', textAlign: 'center', marginRight: 90 }}>
+            <div style={{ marginTop:'4em', textAlign: 'center', marginRight: '8px', marginBottom: '5em' }}>
               <form action="/about-me" style={{ display: 'inline-block' }} >
                 <input className='hire' type="submit" value="About me" />
               </form>
