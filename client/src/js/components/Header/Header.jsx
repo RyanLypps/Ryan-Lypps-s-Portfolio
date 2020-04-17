@@ -6,12 +6,12 @@ class Header extends Component {
     return (
       <div className="container">
         <div className="row">
-          <div className="col-lg-12">
-            <div style={{ position: 'relative', textAlign: 'center', top: '75%' }}>
+          <div className="col-lg-12" style={{ marginTop: '-17em' }}>
+            <div style={{ position: 'relative', textAlign: 'center', top: '61%', marginLeft: '82px' }}>
               <span className='header1'>Ryan  </span>
               <span className='header2'>Lypps</span>
             </div>
-            <div style={{ textAlign: 'center', top: '75%', position: 'relative', marginRight: '85px' }}>
+            <div style={{ textAlign: 'center', top: '61%', position: 'relative', marginLeft: '20px' }}>
               <h2 style={{ color: 'black' }}>Full Stack Web Developer</h2>
             </div>
             <div id='cf'>
