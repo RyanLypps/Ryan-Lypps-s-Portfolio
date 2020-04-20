@@ -31,6 +31,7 @@ class MainPage extends Component {
         </div> */}
         <br></br>
         <br></br>
+        <br></br>
         <div className='row justify-content-center'>
           <div className="col">
             <div style={{ marginTop:'4em', textAlign: 'center', marginRight: '8px', marginBottom: '5em' }}>
