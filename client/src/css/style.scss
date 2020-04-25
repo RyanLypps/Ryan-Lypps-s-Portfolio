@@ -2,6 +2,58 @@ $white: rgb(255, 255, 255);
 $hover: rgb(99, 97, 97);
 $background-color: #bdbebb, #6e6c6c, #464545, #0f0f0f;
 
+
+@media screen and (max-width: 1201px ) , screen and (max-height: 801px ) {
+  
+  .content {
+    overflow: hidden;
+    // width: 80%;
+    width: 1500px;
+    margin: auto;
+    margin-left: 10em;
+  }
+  .gallery-item {
+    float: left;
+    width: 40%;
+    height: 0;
+    padding-bottom: 30%;
+    position: relative;
+    overflow: hidden;
+    
+  }
+ 
+  .slider-container {
+    overflow: hidden;
+  }
+  .slide-holder {
+    width: 400%;
+    
+    img {
+      width: 25%;
+      display: inline-block;
+      max-width: 25%;
+
+    }
+  
+    position: relative;
+    animation: scroller 10s infinite;
+    animation-direction: alternate;
+    animation-delay: 2s;
+    animation-timing-function: ease-in-out;
+  }
+  
+  /* need a step for each slide */
+  @keyframes scroller {
+    0%   { transform: translateX(0); }
+    10%  { transform: translateX(0); }
+    30%  { transform: translateX(-25%); }
+    40%  { transform: translateX(-25%); }
+    60%  { transform: translateX(-50%); }
+    70%  { transform: translateX(-50%); }
+    90% { transform: translateX(-75%); }
+    100% { transform: translateX(-75%); }
+  }
+
 @mixin border-radius($value) {
   border-radius: $value;
 }
@@ -14,7 +66,7 @@ body {
     color: rgb(19, 18, 18);
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    font-size: 130px;
+    font-size: 100px;
     font-family: 'Times New Roman';
   }
 
@@ -22,7 +74,7 @@ body {
     color: $white;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    font-size: 130px;
+    font-size: 100px;
     font-family: 'Times New Roman';
   }
   
@@ -87,123 +139,4 @@ body {
   animation-iteration-count: 1;
 }
 
-// .slide-container {
-//   width: 800px;
-//   height: 600px;
-//   margin-left: auto;
-//   margin-right: auto;
-//   overflow: hidden;
-//   text-align: center;
-// }
-
-// .image-container{
-//   width: 5000px;
-//   height: 300px;
-//   position: relative;
-//   transition: left 5000ms;
-//   -webkit-transition: left 5000ms;
-// }
-
-// .slider-image {
-//   float: left;
-//   margin: 0px;
-//   padding: 0px;
-// }
-
-// .button-container {
-//   top: -20px;
-//   position: relative;
-// }
-
-// .slider-button {
-// display: inline-block;
-// height: 10px;
-// width: 10px;
-// border-radius: 5px;
-// background-color: white;
-// }
-
-// #slider-image-1 {
-//   target ~ .image-container {
-//     left: 0px;
-//   }
-// }
-// #slider-image-2 {
-//   target ~ .image-container {
-//     left: -800px;
-//   }
-// }
-// #slider-image-3 {
-//   target ~ .image-container {
-//     left: -1600px;
-//   }
-// }
-// <div className='slide-container'>
-// <span id='slider-image-1'></span>
-// <span id='slider-image-2'></span>
-// <span id='slider-image-3'></span>
-// <div className='image-container'>
-//   <img src='https://via.placeholder.com/150' className='slider-image' />
-//   <img src='https://via.placeholder.com/300' className='slider-image' />
-//   <img src='https://via.placeholder.com/450' className='slider-image' />
-// </div>
-// <div className='button-container'>
-//   <a href='#slider-image-1' className='slider-button' />
-//   <a href='#slider-image-2' className='slider-button' />
-//   <a href='#slider-image-3' className='slider-button' />
-// </div>
-// </div>
-
-#cf {
-  position:relative;
-  height: 720px;
-  width: 1200px;
-  top: 9%;
 }
-
-#cf3 img {
-  position:absolute;
-  // left:0;
-  margin-left: -43px;
-  // -webkit-transition: opacity 1s ease-in-out;
-  // -moz-transition: opacity 1s ease-in-out;
-  // -o-transition: opacity 1s ease-in-out;
-  // transition: opacity 1s ease-in-out;
-}
-
-// #cf img.top:hover {
-//   opacity:0;
-// }
-
-@keyframes cf3FadeInOut {
-  0% {
-  opacity:0;
-}
-45% {
-opacity:0;
-}
-55% {
-opacity:1;
-}
-100% {
-opacity:1;
-}
-// 0% { left: 0;}
-// 50%{ left : 100%;}
-// 100%{ left: 0;}
-}
-
-#cf3 img.top {
-animation-name: cf3FadeInOut;
-animation-timing-function: ease-in-out;
-animation-iteration-count: infinite;
-animation-duration: 6s;
-animation-direction: alternate;
-}
-#cf3 img.bottom {
-  animation-name: cf3FadeInOut;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-duration: 6s;
-  animation-direction: alternate;
-  }
