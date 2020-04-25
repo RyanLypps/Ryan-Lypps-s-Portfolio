@@ -7,15 +7,11 @@ $background-color: #bdbebb, #6e6c6c, #464545, #0f0f0f;
   
   .content {
     overflow: hidden;
-    // width: 80%;
-    width: 1500px;
     margin: auto;
-    margin-left: 10em;
+    margin-left: 11em;
   }
   .gallery-item {
     float: left;
-    width: 40%;
-    height: 0;
     padding-bottom: 30%;
     position: relative;
     overflow: hidden;
@@ -26,17 +22,24 @@ $background-color: #bdbebb, #6e6c6c, #464545, #0f0f0f;
     overflow: hidden;
   }
   .slide-holder {
-    width: 400%;
-    
-    img {
+
+   width: 400%;
+
+    .ok {
       width: 25%;
       display: inline-block;
       max-width: 25%;
 
     }
-  
+    .ok1 {
+      width: 25%;
+      display: inline-block;
+      max-width: 25%;
+
+    }
+    
     position: relative;
-    animation: scroller 10s infinite;
+    animation: scroller 5s infinite;
     animation-direction: alternate;
     animation-delay: 2s;
     animation-timing-function: ease-in-out;
