@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import StreetEatzBlack from '../../../assets/StreetEatzBlack.png'
-import StreetEatz1 from '../../../assets/StreetEatz1.png'
-import StreetEatz2 from '../../../assets/StreetEatz2.png'
+import StreetEatzBlack from '../../../assets/StreetEatzBlack.png';
+import WeatherNow from '../../../assets/WeatherNow.png';
+import ToDoApp from '../../../assets/ToDoApp.png';
+import GymBuddy from '../../../assets/GymBuddy.png';
 
 class Header extends Component {
 
@@ -15,15 +16,15 @@ class Header extends Component {
               <span className='header2'>Lypps</span>
             </div>
             <div style={{ textAlign: 'center', position: 'relative', marginLeft: '20px', top: '35%' }}>
-              <h2 style={{ color: 'black' }}>Full Stack Web Developer</h2>
+              <h2 style={{ color: 'white' }}>Full Stack Web Developer</h2>
             </div>
             <div className="content">
               <div className="gallery-item slider-container">
                 <div className="slide-holder">
-                  <img src='https://mcdn.wallpapersafari.com/medium/77/30/S8ZKdn.jpg' alt="" className='ok image1' style={{height: '465px'}} />
-                  <img src={StreetEatzBlack} alt="" className='ok' style={{height: '465px'}}/>
-                  <img src={StreetEatz1} alt="" className='ok1' style={{height: '465px', width: '250px', marginRight: '252px', marginLeft: '252px' }} />
-                  <img src={StreetEatz2} alt="" className='ok'  style={{height: '465px', width: '250px', marginRight: '252px', marginLeft: '252px'}}/>
+                  <img src={StreetEatzBlack} alt="" className='ok image1' style={{height: '465px'}}/>
+                  <img src={GymBuddy} alt="" className='ok image1' style={{height: '465px'}} />
+                  <img src={ToDoApp} alt="" className='ok' style={{height: '465px'}}/>
+                  <img src={WeatherNow} alt="" className='ok' style={{height: '465px'}}/>
                 </div>
               </div>
             </div>
