@@ -34,7 +34,7 @@ class MainPage extends Component {
         <br></br>
         <div className='row justify-content-center'>
           <div className="col">
-            <div style={{ marginTop:'4em', textAlign: 'center', marginRight: '8px', marginBottom: '5em' }}>
+            <div style={{ marginTop: '-2em', textAlign: 'center', marginRight: '8px', marginBottom: '2em' }}>
               <form action="/about-me" style={{ display: 'inline-block' }} >
                 <input className='hire' type="submit" value="About me" />
               </form>
