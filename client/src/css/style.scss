@@ -7,24 +7,25 @@ $background-color: #bdbebb, #6e6c6c, #464545, #0f0f0f;
   
   .content {
     overflow: hidden;
-    margin: auto;
-    margin-left: 11em;
+    // margin: auto;
+    // margin-left: 11em;
   }
   .gallery-item {
+
     float: left;
-    padding-bottom: 30%;
     position: relative;
     overflow: hidden;
-    
+
   }
  
   .slider-container {
     overflow: hidden;
+
   }
   .slide-holder {
 
    width: 400%;
-
+   
     .ok {
       width: 25%;
       display: inline-block;
@@ -37,12 +38,14 @@ $background-color: #bdbebb, #6e6c6c, #464545, #0f0f0f;
       max-width: 25%;
 
     }
-    
+ 
+
     position: relative;
     animation: scroller 5s infinite;
     animation-direction: alternate;
-    animation-delay: 2s;
+    animation-delay: 4s;
     animation-timing-function: ease-in-out;
+  
   }
   
   /* need a step for each slide */
@@ -55,6 +58,23 @@ $background-color: #bdbebb, #6e6c6c, #464545, #0f0f0f;
     70%  { transform: translateX(-50%); }
     90% { transform: translateX(-75%); }
     100% { transform: translateX(-75%); }
+  }
+
+  .image1 {
+       
+    animation: fadeInAnimation ease 8s; 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards;
+  
+  }
+
+  @keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+    } 
   }
 
 @mixin border-radius($value) {
