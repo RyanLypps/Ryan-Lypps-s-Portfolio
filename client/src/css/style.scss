@@ -7,8 +7,12 @@ $background-color: black;
   
   .content {
     overflow: hidden;
-    // margin: auto;
-    // margin-left: 11em;
+    margin: auto;
+    border-style: solid;
+    border-width: 3px;
+    border-color: white;
+    border-radius: 10px;
+    margin-top: 50px
   }
   .gallery-item {
 
@@ -85,22 +89,44 @@ body {
   background: $background-color;
 }
 
+.headers {
+  animation: translatesUp ease 2s; 
+  animation-iteration-count: 1; 
+  animation-fill-mode: forwards;
+  animation-delay: 3s;
+}
+
+.sub-headers {
+  animation: translatesUp ease 2s; 
+  animation-iteration-count: 1; 
+  animation-fill-mode: forwards;
+  animation-delay: 3s;
+}
+
 .header1 {
-    color: $white;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    font-size: 100px;
-    font-family: 'Times New Roman';
-  }
+  color: $white;
+  text-transform: uppercase;
+  font-size: 100px;
+  font-family: 'Times New Roman';
+
+}
+
+
+@keyframes translatesUp {
+
+  from {transform: scale(1) translateY(0px)}
+  to {transform: scale(.50) translateY(-200px);}
+
+}
 
 .header2 {
     color: $white;
-    letter-spacing: 0.1em;
     text-transform: uppercase;
     font-size: 100px;
     font-family: 'Times New Roman';
+
   }
-  
+
 .hire {
   color: white;
   @include border-radius(10px);
@@ -122,6 +148,14 @@ body {
     opacity: .90;
     border-color: rgb(0, 0, 0);
   }
+
+  &:active {
+    opacity: 1;
+    transform: scale(0.75) translateY(5%);
+  }
+}
+
+.logos{ 
 
   &:active {
     opacity: 1;
