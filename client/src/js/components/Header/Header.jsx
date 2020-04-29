@@ -14,9 +14,9 @@ class Header extends Component {
             <div className='headers' style={{ position: 'relative', textAlign: 'center', marginLeft: 8 }}>
               <span className='ryan header1'>Ryan Lypps </span>
             </div>
-            {/* <div className='sub-headers' style={{  textAlign: 'center'}}>
-              <h2 style={{ color: 'white', position: 'absolute' }}>Full Stack Developer</h2>
-            </div> */}
+            <div className='sub-headers' style={{  textAlign: 'center', position: 'relative'}}>
+              <h2 className='lypps' style={{ color: 'white'}}>Full Stack Developer</h2>
+            </div>
           <div className="gallery-item" style={{height: '100%', width: '100%'}}>
             <div className="slide-holder" >
               <img src={StreetEatzBlack} alt="" className='ok image1' style={{  }} />
