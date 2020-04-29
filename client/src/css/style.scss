@@ -8,10 +8,7 @@ $background-color: black;
 
 .ryan{
   position: absolute;
-  // top: 50%;
-  // left: 30%;
   transform: translate(-50%, 60%);
-  // left: 30%;
   margin: auto;
 }
 
@@ -21,7 +18,7 @@ $background-color: black;
     border-width: 3px;
     border-color: white;
     border-radius: 10px;
-    margin-top: 50px;
+    margin-top: 4%;
     width: 100%;
   }
   .gallery-item {
@@ -32,9 +29,6 @@ $background-color: black;
     
   }
  
-  .slider-container {
-    width: 100%;
-  }
   .slide-holder {
 
    width: 400%;
@@ -43,13 +37,12 @@ $background-color: black;
       width: 25%;
       display: inline-block;
       max-width: 25%;
-
+      height: 83vh;
     }
     .ok1 {
       width: 25%;
       display: inline-block;
-      max-width: 25%;
-
+      height: 83vh;
     }
  
 
@@ -94,8 +87,10 @@ $background-color: black;
   border-radius: $value;
 }
 
-body {
+body, html {
   background: $background-color;
+  height: 100%;
+  width: 100%;
 }
 
 .headers {

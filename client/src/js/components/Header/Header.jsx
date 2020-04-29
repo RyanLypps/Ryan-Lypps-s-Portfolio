@@ -11,18 +11,18 @@ class Header extends Component {
       <div className="container">
         <div className="row">
           <div className="content" >
-            <div className='headers' style={{ position: 'relative', textAlign: 'center' }}>
+            <div className='headers' style={{ position: 'relative', textAlign: 'center', marginLeft: 8 }}>
               <span className='ryan header1'>Ryan Lypps </span>
             </div>
             {/* <div className='sub-headers' style={{  textAlign: 'center'}}>
               <h2 style={{ color: 'white', position: 'absolute' }}>Full Stack Developer</h2>
             </div> */}
-          <div className="gallery-item slider-container">
-            <div className="slide-holder">
-              <img src={StreetEatzBlack} alt="" className='ok image1' style={{ height: '465px' }} />
-              <img src={GymBuddy} alt="" className='ok image1' style={{ height: '465px' }} />
-              <img src={ToDoApp} alt="" className='ok' style={{ height: '465px' }} />
-              <img src={WeatherNow} alt="" className='ok' style={{ height: '465px' }} />
+          <div className="gallery-item" style={{height: '100%', width: '100%'}}>
+            <div className="slide-holder" >
+              <img src={StreetEatzBlack} alt="" className='ok image1' style={{  }} />
+              <img src={GymBuddy} alt="" className='ok image1' style={{  }} />
+              <img src={ToDoApp} alt="" className='ok' style={{  }} />
+              <img src={WeatherNow} alt="" className='ok' style={{  }} />
             </div>
           </div>
         </div>
