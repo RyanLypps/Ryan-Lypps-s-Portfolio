@@ -10,14 +10,13 @@ class Header extends Component {
     return (
       <div className="container">
         <div className="row">
-          <div className="content">
-            <div className='headers' style={{ position: 'absolute', top: '8%', marginLeft: '-20px', left: '26.5%' }}>
-              <span className='header1'>Ryan  </span>
-              <span className='header2'>Lypps</span>
+          <div className="content" >
+            <div className='headers' style={{ position: 'relative', textAlign: 'center' }}>
+              <span className='ryan header1'>Ryan Lypps </span>
             </div>
-            <div className='sub-headers' style={{ position: 'absolute', marginLeft: '20px', top: '35%', left: '36.5%' }}>
-              <h2 style={{ color: 'white' }}>Full Stack Developer</h2>
-            </div>
+            {/* <div className='sub-headers' style={{  textAlign: 'center'}}>
+              <h2 style={{ color: 'white', position: 'absolute' }}>Full Stack Developer</h2>
+            </div> */}
           <div className="gallery-item slider-container">
             <div className="slide-holder">
               <img src={StreetEatzBlack} alt="" className='ok image1' style={{ height: '465px' }} />

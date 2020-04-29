@@ -3,28 +3,37 @@ $hover: rgb(99, 97, 97);
 $background-color: black;
 
 
-@media screen and (max-width: 1201px ) , screen and (max-height: 801px ) {
+// @media screen and (max-width: 1201px ) , screen and (max-height: 801px ) {
   
+
+.ryan{
+  position: absolute;
+  // top: 50%;
+  // left: 30%;
+  transform: translate(-50%, 60%);
+  // left: 30%;
+  margin: auto;
+}
+
   .content {
-    overflow: hidden;
     margin: auto;
     border-style: solid;
     border-width: 3px;
     border-color: white;
     border-radius: 10px;
-    margin-top: 50px
+    margin-top: 50px;
+    width: 100%;
   }
   .gallery-item {
 
     float: left;
     position: relative;
     overflow: hidden;
-
+    
   }
  
   .slider-container {
-    overflow: hidden;
-
+    width: 100%;
   }
   .slide-holder {
 
@@ -106,7 +115,7 @@ body {
 .header1 {
   color: $white;
   text-transform: uppercase;
-  font-size: 100px;
+  font-size: 90px;
   font-family: 'Times New Roman';
 
 }
@@ -161,7 +170,7 @@ body {
     opacity: 1;
     transform: scale(0.75) translateY(5%);
   }
-}
+// }
 
 // @keyframes pulse {
 //   from {
