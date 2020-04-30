@@ -20,6 +20,7 @@ class MainPage extends Component {
   render() {
     return (
       <div className="container">
+        <div></div>
         <Header />
         <Footer />>
       </div >

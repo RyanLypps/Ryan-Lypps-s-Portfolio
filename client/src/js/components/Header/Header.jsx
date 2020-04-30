@@ -8,9 +8,10 @@ class Header extends Component {
 
   render() {
     return (
-      <div className="container">
+      <div className="container" >
+      <div></div>
         <div className="row">
-          <div className="content" >
+          <div className="content">
             <div className='headers' style={{ position: 'relative', textAlign: 'center', marginLeft: 8 }}>
               <span className='ryan header1'>Ryan Lypps </span>
             </div>

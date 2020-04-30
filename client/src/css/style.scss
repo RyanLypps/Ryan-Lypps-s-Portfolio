@@ -1,14 +1,26 @@
-$white: rgb(255, 255, 255);
+$white: white;
 $hover: rgb(99, 97, 97);
 $background-color: black;
 
 
 // @media screen and (max-width: 1201px ) , screen and (max-height: 801px ) {
   
+.outer-header{ 
+  height: 5%;
+  position: absolute;
+  width: 100%;
+  background-color: white;
+  opacity: .98;
+}
+
+#root{
+  height: 100%;
+  width: 100%;
+}
 
 .ryan{
   position: absolute;
-  transform: translate(-50%, 60%);
+  transform: translate(-50%, 30%);
   margin: auto;
 }
 .lypps{
@@ -21,9 +33,9 @@ $background-color: black;
     margin: auto;
     border-style: solid;
     border-width: 3px;
-    border-color: white;
+    border-color: whitesmoke;
     border-radius: 10px;
-    margin-top: 4%;
+    margin-top: 6%;
     width: 100%;
   }
   .gallery-item {
@@ -103,6 +115,9 @@ body, html {
   animation-iteration-count: 1; 
   animation-fill-mode: forwards;
   animation-delay: 3s;
+
+
+
 }
 
 .sub-headers {
@@ -114,12 +129,27 @@ body, html {
 
 .header1 {
   color: $white;
+  // color: white;
   text-transform: uppercase;
   font-size: 90px;
   font-family: 'Times New Roman';
+  font-weight: 550;
+
+  animation: colorChange ease 2.5s; 
+  animation-iteration-count: 1; 
+  animation-fill-mode: forwards;
+  animation-delay: 3s;
 
 }
 
+@keyframes colorChange{
+  0% {
+    color: white;
+  }
+  100% {
+    color: black;
+  }
+}
 
 @keyframes translatesUp {
 
@@ -137,10 +167,10 @@ body, html {
   }
 
 .hire {
-  color: white;
+  color: $white;
   @include border-radius(10px);
   font-size: 30px;
-  border-color: white;
+  border-color: whitesmoke;
   border-width: 2px;
   cursor: 'hand';
   border-block-end-width: 3px;
