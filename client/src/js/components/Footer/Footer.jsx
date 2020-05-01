@@ -5,9 +5,8 @@ class Footer extends Component {
 
     render() {
         return (
-            <div className="container" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', height: '50px', marginLeft: -7 }}>
-                 <div style={{flexBasis: '100%'}}></div> 
-                <div style={{ height: '80%'}}>
+            <div className="container" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', marginLeft: -7, height: '0%' }}>
+                <div style={{ marginTop: '4%' }}>
                     <span style={{ paddingRight: '1.8em', position: 'relative', bottom: '-8px'}}><a href="mailto:r_lypps@yahoo.com" target="_blank"><i className="fa fa-envelope" style={{ fontSize: '48px', color: 'white', borderWidth: '2px', border: 'white', borderStyle: 'solid', borderRadius: '10px', borderBlockStartWidth: '3px', borderBlockEndWidth: '3px', paddingRight: '10px', paddingLeft: '10px' }}></i></a></span>
                     <span style={{ paddingRight: '1.8em', position: 'relative', bottom: '-8px'}}><a href="https://github.com/RyanLypps" target="_blank"><i className="fa fa-github logos" style={{ fontSize: '48px', color: 'white', borderWidth: '2px', border: 'white', borderStyle: 'solid', borderRadius: '10px', borderBlockStartWidth: '3px', borderBlockEndWidth: '3px', paddingRight: '10px', paddingLeft: '10px' }}></i></a></span>
                     <form action="/about-me" style={{ display: 'inline-block' }} >
