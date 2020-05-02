@@ -38,10 +38,7 @@ boot(app, __dirname, function(err) {
 app.get('/about-me', (req, res) => {
   res.sendFile(path.join(__dirname, '../dist/index.html'));
 });
+
 app.get('/projects', (req, res) => {
   res.sendFile(path.join(__dirname, '../dist/index.html'));
 });
-
-// app.get('/about-me', (req, res) => {
-  //   res.sendStatus(200);
-  // });
