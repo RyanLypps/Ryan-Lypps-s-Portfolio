@@ -22,10 +22,10 @@ class MainPage extends Component {
       <div style={{ height: '100%' }}>
         <div className='ryan header1' style={{ height: '6%', backgroundColor: 'whitesmoke', opacity: .98, position: 'relative', textAlign: 'center' }}>
           <div style={{ position: 'absolute' }}>
-            <form action="/about-me" style={{ display: 'inline-block' }} >
+            <form action="/about-me" style={{ display: 'inline-block', position: 'relative', bottom: '5px' }} >
               <input className='hire'style={{border: 'none'}} type="submit" value="About me" />
             </form>
-            <form action="/Projects" style={{ display: 'inline-block' }}>
+            <form action="/Projects" style={{ display: 'inline-block', position: 'relative', bottom: '5px' }}>
               <input className='hire' style={{ border: 'none'}} type="submit" value="Projects" />
             </form>
           </div>
