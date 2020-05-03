@@ -9,9 +9,6 @@ class Header extends Component {
   render() {
     return (
       <div className="container" style={{ height: '75%'}} >
-            {/* <div className='headers' style={{ position: 'relative', textAlign: 'center' }}>
-              <span className='ryan header1'>Ryan Lypps </span>
-            </div> */}
           <div className="content">
             <div className='sub-headers' style={{ position: 'relative', textAlign: 'center'}}>
               <h2 className='lypps' style={{ color: 'white'}}>Full Stack Developer</h2>
