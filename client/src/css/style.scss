@@ -20,19 +20,15 @@ $background-color: black;
 
 
 .ryan{
-  position: absolute;
-  transform: translate(-50%);
   margin: auto;
 }
 .lypps{
-  position: absolute;
-  transform: translate(133%, 350%);
+  transform: translate(0%, 200%);
   margin: auto;
 }
 
   .content {
     margin: auto;
-    margin-top: 7%;
     width: 100%;
     height: 105%;
   }
@@ -42,7 +38,7 @@ $background-color: black;
     position: relative;
     overflow: hidden;
     border-style: solid;
-    border-width: 5px;
+    border-width: 4px;
     border-color: whitesmoke;
     border-radius: 10px;
     
@@ -113,10 +109,10 @@ body, html {
 }
 
 .headers {
-  animation: translatesUp ease 2s; 
+  animation: translatesUp ease 1s; 
   animation-iteration-count: 1; 
   animation-fill-mode: forwards;
-  animation-delay: 3s;
+  animation-delay: 1s;
 
 
 
@@ -126,21 +122,20 @@ body, html {
   animation: translatesUp ease 2s; 
   animation-iteration-count: 1; 
   animation-fill-mode: forwards;
-  animation-delay: 3s;
+  animation-delay: 2s;
 }
 
 .header1 {
-  color: $white;
-  // color: white;
+  color: black;
   text-transform: uppercase;
-  font-size: 80px;
+  font-size: 2.50vw;
   font-family: 'Times New Roman';
   font-weight: 550;
 
-  animation: colorChange ease 2.5s; 
-  animation-iteration-count: 1; 
-  animation-fill-mode: forwards;
-  animation-delay: 3s;
+  // animation: colorChange ease 2.5s; 
+  // animation-iteration-count: 1; 
+  // animation-fill-mode: forwards;
+  // animation-delay: 3s;
 
 }
 
@@ -154,21 +149,13 @@ body, html {
 }
 
 @keyframes translatesUp {
-
-  from {transform: scale(1) translateY(0px)}
-  to {transform: scale(.50) translateY(-260px);}
-
+  
+    from {  transform: scale(1) translate(0%, 0%);}
+    to {  transform: scale(.50) translate(0%, -200%);}
+  
 }
 
-.header2 {
-    color: $white;
-    text-transform: uppercase;
-    font-size: 100px;
-    font-family: 'Times New Roman';
-
-  }
-
-.hire {
+.hire1 {
   color: $white;
   @include border-radius(10px);
   font-size: 30px;
@@ -193,6 +180,28 @@ body, html {
   &:active {
     opacity: 1;
     transform: scale(0.75) translateY(5%);
+  }
+}
+.hire {
+  font-size: 2vw;
+  cursor: 'hand';
+  font-family: Times New Roman;
+  background: transparent;
+  transition: all 300ms ease-in-out 0.5ms;
+  -webkit-transition: all 300ms ease-in-out 0.5ms;
+  transform: translate(0%, 0%);
+
+
+  &:hover {
+    color: $hover;
+    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    opacity: .90;
+    border-color: rgb(0, 0, 0);
+  }
+
+  &:active {
+    opacity: 1;
+    transform: scale(0.90) translateY( -5%);
   }
 }
 
