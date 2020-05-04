@@ -8,20 +8,20 @@ class ImageCarousel extends Component {
 
   render() {
     return (
-      <div className="container" style={{ height: '75%'}} >
-          <div className="content">
-            <div className='sub-headers' style={{ position: 'relative', textAlign: 'center'}}>
-              <h2 className='lypps' style={{ color: 'white'}}>Full Stack Developer</h2>
-            </div>
-          <div className="gallery-item" style={{height: '100%', width: '100%'}}>
-            <div className="slide-holder" >
-              <img src={StreetEatzBlack} alt="" className='ok image1' style={{  }} />
-              <img src={GymBuddy} alt="" className='ok image1' style={{  }} />
-              <img src={ToDoApp} alt="" className='ok' style={{  }} />
-              <img src={WeatherNow} alt="" className='ok' style={{  }} />
+      <div className='container img-carousel-container'>
+        <div className="content">
+          <div className='sub-headers'>
+            <h2 className='move-sub-header'>Full Stack Developer</h2>
+          </div>
+          <div className='gallery-item'>
+            <div className='slide-holder' >
+              <img src={ StreetEatzBlack } alt="" className='each-image fade-in-img'/>
+              <img src={ GymBuddy } alt="" className='each-image'/>
+              <img src={ ToDoApp } alt="" className='each-image'/>
+              <img src={ WeatherNow } alt="" className='each-image'/>
             </div>
           </div>
-      </div>
+        </div>
       </div >
     );
   }
