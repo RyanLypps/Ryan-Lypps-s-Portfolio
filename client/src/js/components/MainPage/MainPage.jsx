@@ -5,21 +5,12 @@ import ImageCarousel from '../ImageCarousel/ImageCarousel';
 import Footer from '../Footer/Footer';
 
 class MainPage extends Component {
-  constructor() {
-    super();
-
-    this.keyframes = this.keyframes.bind(this);
-  }
-
-  keyframes() {
-    console.log('lol');
-  }
 
   render() {
     return (
-      <div style={{ height: '100%' }}>
+      <div className='main-container'>
         <Header />
-        <div className='container' style={{ height: '90%' }}>
+        <div className='container body-footer-container'>
           <ImageCarousel />
           <Footer />>
         </div>
