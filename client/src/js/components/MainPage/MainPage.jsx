@@ -21,12 +21,12 @@ class MainPage extends Component {
     return (
       <div style={{ height: '100%' }}>
         <div className='ryan header1' style={{ height: '6%', backgroundColor: 'whitesmoke', opacity: .98, position: 'relative', textAlign: 'center' }}>
-          <div style={{ position: 'absolute' }}>
-            <form action="/about-me" style={{ display: 'inline-block', position: 'relative', bottom: '5px' }} >
-              <input className='hire'style={{border: 'none'}} type="submit" value="About me" />
+          <div style={{ position: 'absolute', height: '100%' }}>
+            <form action="/about-me" style={{ display: 'inline-block', position: 'relative', bottom: '5px', height: '100%' }} >
+              <input className='hire'style={{ borderRightStyle: 'solid', borderRightWidth: 2, borderColor: 'black', borderBottom: 'none', borderTop: 'none', borderLeft: 'none', height: '135%'}} type="submit" value="About" />
             </form>
-            <form action="/Projects" style={{ display: 'inline-block', position: 'relative', bottom: '5px' }}>
-              <input className='hire' style={{ border: 'none'}} type="submit" value="Projects" />
+            <form action="/Projects" style={{ display: 'inline-block', position: 'relative', bottom: '5px', height: '100%' }}>
+              <input className='hire' style={{ border: 'none', height: '135%' }} type="submit" value="Projects" />
             </form>
           </div>
           Ryan Lypps
