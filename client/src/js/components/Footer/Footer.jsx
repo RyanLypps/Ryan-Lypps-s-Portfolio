@@ -6,7 +6,7 @@ class Footer extends Component {
     render() {
         return (
             <div className='container footer-container'>
-                <div className='footer-sub-container'>
+                <div>
                     <span className='mail-container'><a href='mailto:r_lypps@yahoo.com' target='_blank'>
                         <i className='fa fa-envelope i-mail-git-linkedin'></i>
                     </a></span>
