@@ -8,7 +8,7 @@ class ImageCarousel extends Component {
 
   render() {
     return (
-      <div className='container img-carousel-container'>
+      <div className="container img-carousel-container">
         <div className="content">
           <div className='sub-headers'>
             <h2 className='move-sub-header'>Full Stack Developer</h2>
