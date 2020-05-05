@@ -18,7 +18,7 @@ class ImageCarousel extends Component {
               <img src={ StreetEatzBlack } alt="" className='each-image fade-in-img'/>
               <img src={ GymBuddy } alt="" className='each-image'/>
               <img src={ ToDoApp } alt="" className='each-image'/>
-              <img src={ WeatherNow } alt="" className='each-image'/>
+              <a href='https://weatherappryanlyppss.herokuapp.com/' target='_blank' ><img src={ WeatherNow } alt="" className='each-image'/></a>
             </div>
           </div>
         </div>
