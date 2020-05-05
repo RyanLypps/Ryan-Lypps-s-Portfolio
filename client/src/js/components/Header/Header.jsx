@@ -10,7 +10,10 @@ export default class Header extends Component {
             <input className='tab-headers about-me' type="submit" value="About" />
           </form>
           <form action="/Projects" className='on-forms'>
-            <input className='tab-headers projects' type="submit" value="Projects" />
+            <input className='tab-headers about-me' type="submit" value="Projects" />
+          </form>
+          <form action="/" className='on-forms'>
+            <input className='tab-headers projects' type="submit" value="Home" />
           </form>
         </div>
           Ryan Lypps
