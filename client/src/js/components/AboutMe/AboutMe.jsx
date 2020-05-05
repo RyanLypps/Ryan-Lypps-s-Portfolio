@@ -17,10 +17,11 @@ class AboutMe extends Component {
     return (
       <div style={{ height: '100%' }}>
         <Header />
-        <div style={{ height: '80%', width: '100%', display: 'flex', alignItems: 'center' }}>
-          <div style={{height: '54%', width: '17%'}}>
+        <div style={{ height: '80%', width: '100%', display: 'inline-flex', alignItems: 'center' }}>
+          <div style={{ width: '20%', marginLeft: '5%'}}>
           <img src={ headShot } className='' style={{height: '100%', width: '100%'}} alt="" />
           </div>
+          <p style={{color: 'white'}}>Hello, This is a long sentence to test out how it looks like in there. Trying to type so much it makes me ill. Gold for everyone haha.</p>
         </div>
         <div style={{ height: '5.50%', width: '100%', display: 'flex', alignItems: 'center' }}>
           <Footer />
