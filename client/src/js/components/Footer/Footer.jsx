@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import ResumeIcon from '../../../assets/resume-icon.png';
 
 class Footer extends Component {
@@ -14,9 +15,9 @@ class Footer extends Component {
                         <i className='fa fa-github icon-actives i-mail-git-linkedin' ></i>
                     </a></span>
                     <span>
-                        <form className='home-form' action="/">
+                        <Link to='/' className='home-form'>
                             <input className='footer-icons logo-rl' type='submit' value='R L' />
-                        </form>
+                        </Link>
                     </span>
                     <span className='linkedin-container'><a href='https://www.linkedin.com/in/ryan-lypps-940958138' target="_blank">
                         <i className='fa fa-linkedin icon-actives i-mail-git-linkedin'></i>

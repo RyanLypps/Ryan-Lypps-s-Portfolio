@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 export default class Header extends Component {
 
@@ -6,15 +7,15 @@ export default class Header extends Component {
     return (
       <div className='header-container'>
         <div className='forms'>
-          <form action="/about-me" className='on-forms'>
+          <Link to='/about-me' className='on-forms'>
             <input className='tab-headers about-me' type="submit" value="About" />
-          </form>
-          <form action="/Projects" className='on-forms'>
+          </Link>
+          <Link to='/Projects' className='on-forms'>
             <input className='tab-headers about-me' type="submit" value="Projects" />
-          </form>
-          <form action="/" className='on-forms'>
+          </Link>
+            <Link to = '/' className='on-forms'>
             <input className='tab-headers projects' type="submit" value="Home" />
-          </form>
+            </Link>
         </div>
           Ryan Lypps
       </div>
