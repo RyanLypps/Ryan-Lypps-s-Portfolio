@@ -1,7 +1,7 @@
 module.exports = {
-    "MongoDB": {
-        "url": "mongodb://localhost/my-portfolio-dev",
-        "name": "MongoDB",
-        "connector": "mongodb"
-    }
+  "MongoDB": {
+      "url": "mongodb://localhost/my-portfolio-dev",
+      "name": "MongoDB",
+      "connector": "mongodb"
+  }
 }

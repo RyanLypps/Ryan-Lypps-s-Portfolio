@@ -55,7 +55,7 @@ $background-color: black;
   
   // Main Tags/root
 
-  #root{
+  #root {
     height: 100%;
     width: 100%;
   }
@@ -171,10 +171,6 @@ $background-color: black;
     float: left;
     position: relative;
     overflow: hidden;
-    // border-style: solid;
-    border-width: 4px;
-    border-color: whitesmoke;
-    border-radius: 10px;
   }
 
   .slide-holder {
@@ -338,42 +334,130 @@ $background-color: black;
   // about-me page
 
   .about-me-p-container {
-    border-color: white;
-    // border-style: solid;
-    border-width: 3px;
-    border-radius: 10px;
     margin-left: 1.5%;
     margin-top: 1.5%;
     margin-bottom: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+
+  .about-me-container {
+    height: 100%;
+    width: 100%;
+  }
+
+  .about-me-body {
+    height: 85%;
+    width: 100%;
+    display: inline-flex;
   }
 
   .about-me-img {
-    // border-style: solid;
-    border-color: white;
+    width: 100%;
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  .about-me-on-img {
+    width: 100%;
     border-radius: 10px;
-    border-width: 3px;
+  }
+
+  .about-me-header {
+    color: white;
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-me-each-p {
+    color: white;
+    font-size: 2.20vmin;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: Times New Roman;
+    text-indent: 5%;
+  }
+
+  .about-me-footer-container {
+    height: 0%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: -.5%;
   }
 
   // Projects Page
   
-  .each-game-box {
+  .project-container {
+    height: 100%;
+    width: 100%;
+  }
+
+  .project-sub-container {
+    height: 85%;
+    width: 100%;
+    display: inline-flex;
+  }
+
+  .project-sub-sub-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+  }
+
+  .project-component-container {
+    width: 25% ;
+    height: 50%;
+  }
+
+  .each-project-box {
     display: flex;
     flex-direction: column;
     margin: 0px 50px 25px;
-    // border-style: solid;
-    // border-color: white;
-    // border-width: 3px;
-    // border-radius: 10px;
   }
   
-  .each-game-title {
+  .each-project-title {
     align-self: center;
     font-size: 2vmin;
     margin-bottom: 5px;
     @include nonselectable;
+    color: white;
+  }
+
+  .project-p-container {
+    width: 90%;
+    text-align: center;
+    margin-left: 6%;
+    height: 50%;
+  }
+
+  .project-each-p-container {
+    color: white;
+  }
+
+  .projects-coming-soon {
+    color: white ;
+    text-align: center;
+    font-size: 2vmin;
+    font-weight: bold;
+  }
+
+  .project-footer-container {
+    height: 0%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: -.5%;
   }
   
-  .each-game {
+  .each-project {
     align-self: center;
     height: 100%;
     width: 100%;

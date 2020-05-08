@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import images from '../../../assets/*.png';
@@ -12,8 +11,6 @@ class Projects extends Component {
     }
   }
 
-  // Project name, Description of what it does, What it is built with, photo of it, link to hosted if it is.
-
   componentDidMount() {
     fetch('/api/Projects')
       .then(res => res.json())
@@ -24,30 +21,30 @@ class Projects extends Component {
     let keyCounter = 0;
     console.log(this.state.projects);
     return (
-      <div style={{ height: '100%', width: '100%' }}>
+      <div className='project-container'>
         <Header />
-        <div style={{ height: '85%', width: '100%', display: 'inline-flex' }}>
-          <div style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center', height: '100%', width: '100%', alignItems: 'center' }}>
+        <div className='project-sub-container'>
+          <div className='project-sub-sub-container'>
             {this.state.projects.map(project => {
               keyCounter++;
 
               return (
-                <div style={{ width: '25%', height: '50%' }} key={keyCounter}>
-                  <div className='each-game-box'>
-                    <h3 className='each-game-title' style={{ color: 'white' }} >{project.name}</h3>
-                    <img className='each-game' src={Object.values(images).filter(value => value.includes(project.photo))[0]} />
+                <div className='project-component-container' key={keyCounter}>
+                  <div className='each-project-box'>
+                    <h3 className='each-project-title'>{project.name}</h3>
+                    <img className='each-project' src={Object.values(images).filter(value => value.includes(project.photo))[0]} />
                   </div>
-                  <div style={{ width: '90%', textAlign: 'center', marginLeft: '6%', height: '50%' }}>
-                    <p style={{ color: 'white' }}>{project.description}</p>
-                    <p style={{ color: 'white' }}>{project.builtWith}</p>
+                  <div className='project-p-container'>
+                    <p className='project-each-p-container'>{project.description}</p>
+                    <p className='project-each-p-container'>{project.builtWith}</p>
                   </div>
                 </div>
               )
             })}
-            <p style={{ color: 'white', textAlign: 'center', fontSize: '2vmin', fontWeight: 'bold' }}>More projects to come!</p>
+            <p className='projects-coming-soon'>More projects to come!</p>
           </div>
         </div>
-        <div style={{ height: '0%', width: '100%', display: 'flex', alignItems: 'center', marginTop: '-.5%'}}>
+        <div className='project-footer-container'>
           <Footer />
         </div>
       </div>
