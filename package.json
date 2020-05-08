@@ -6,9 +6,9 @@
     "node": ">=6"
   },
   "scripts": {
-    "build": "parcel build client/src/html/index.html && node .",
+    "build": "parcel watch client/src/html/index.html",
     "lint": "eslint .",
-    "start": "parcel build client/src/html/index.html && node .",
+    "start": "node .",
     "posttest": "npm run lint"
   },
   "dependencies": {
