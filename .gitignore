@@ -20,3 +20,4 @@ npm-debug.log
 *dist
 *env
 *.cache
+*server/datasources.json
