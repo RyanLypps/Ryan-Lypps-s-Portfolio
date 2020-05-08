@@ -8,7 +8,7 @@
   "scripts": {
     "build": "parcel build client/src/html/index.html && node .",
     "lint": "eslint .",
-    "start": "parcel build client/src/html/index.html && node .",
+    "start": "node ./server/server.js",
     "posttest": "npm run lint"
   },
   "dependencies": {
