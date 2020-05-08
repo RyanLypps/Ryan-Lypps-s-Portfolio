@@ -6,9 +6,9 @@
     "node": ">=6"
   },
   "scripts": {
-    "build": "NODE_ENV=production parcel build client/src/html/index.html --public-url",
+    "build": "cross-env NODE_ENV=production parcel build client/src/html/index.html",
     "lint": "eslint .",
-    "start": "NODE_ENV=production parcel build client/src/html/index.html --public-url",
+    "start": "parcel build client/src/html/index.html",
     "posttest": "npm run lint"
   },
   "dependencies": {
