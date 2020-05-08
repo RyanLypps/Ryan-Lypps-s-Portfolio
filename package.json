@@ -6,7 +6,7 @@
     "node": ">=6"
   },
   "scripts": {
-    "build": "cross-env NODE_ENV=production parcel build client/src/html/index.html",
+    "build": "NODE_ENV=production parcel build client/src/html/index.html",
     "lint": "eslint .",
     "start": "parcel build client/src/html/index.html",
     "posttest": "npm run lint"
