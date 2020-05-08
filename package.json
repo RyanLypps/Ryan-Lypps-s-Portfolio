@@ -6,9 +6,9 @@
     "node": ">=6"
   },
   "scripts": {
-    "build": "node ./server/server.js",
+    "build": "parcel build client/src/html/index.html",
     "lint": "eslint .",
-    "start": "node ./server/server.js",
+    "start": "parcel build client/src/html/index.html",
     "posttest": "npm run lint"
   },
   "dependencies": {
