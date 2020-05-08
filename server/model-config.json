@@ -34,5 +34,9 @@
   "Role": {
     "dataSource": "MongoDB",
     "public": false
+  },
+  "Projects": {
+    "dataSource": "MongoDB",
+    "public": true
   }
 }

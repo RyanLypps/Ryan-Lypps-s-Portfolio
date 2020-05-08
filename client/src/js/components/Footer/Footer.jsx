@@ -23,7 +23,7 @@ class Footer extends Component {
                         <i className='fa fa-linkedin icon-actives i-mail-git-linkedin'></i>
                     </a></span>
                     <span className='resume-container'><a href='https://drive.google.com/open?id=1J3Am4-z2vQ_bJvvUqHGOFGgUVJ6OPXJi' target="_blank">
-                        <img src={ResumeIcon} className='footer-icons i-resume' alt="" />
+                        <img src={ResumeIcon} className='footer-icons-resume i-resume' alt="" />
                     </a></span>
                 </div>
             </div >
