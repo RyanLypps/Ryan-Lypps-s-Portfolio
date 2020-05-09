@@ -3,7 +3,7 @@
 module.exports = {
   'mongoatlas': {
     'host': '',
-    'port': 0,
+    'port': process.env.PORT,
     'url': process.env.MONGODB_URI,
     'database': 'mongodb',
     'password': '12345',
