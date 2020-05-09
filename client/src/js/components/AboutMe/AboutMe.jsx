@@ -19,7 +19,7 @@ class AboutMe extends Component {
               I'm a Full Stack Developer, who lives in San Diego, working on passion projects at the moment. 
             I upload any work I do onto GitHub so feel free to check it out. My programming journey began 
             in December 2019. I enrolled into San Diego Code School and fell in love with coding. I code
-            everyday and desire to be the best I can be in this field. I wish to be given the chance to provide high quality work for all. 
+            everyday and desire to be the best I can be in this field. I wish to be given the chance to provide high quality code for all. 
             I will be deploying more passion projects as time goes on to showcase my knowledge and adeptness at coding.
             </p>
             <h2 className='about-me-header'> Values</h2>
