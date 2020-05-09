@@ -1,1 +1,13 @@
-{}
+{
+  "mongoatlas": {
+    "host": "",
+    "port": ,
+    "url": "mongodb://ghoster:12345@my-portfolio-shard-00-00-1zgcd.mongodb.net:27017,my-portfolio-shard-00-01-1zgcd.mongodb.net:27017,my-portfolio-shard-00-02-1zgcd.mongodb.net:27017/test?ssl=true&replicaSet=my-portfolio-shard-0&authSource=admin&retryWrites=true&w=majority",
+    "database": "mongodb",
+    "password": "12345",
+    "name": "mongoatlas",
+    "user": "ghoster",
+    "useNewUrlParser": true,
+    "connector": "mongodb"
+  }
+}
