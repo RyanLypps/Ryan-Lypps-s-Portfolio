@@ -2,7 +2,7 @@
 
 module.exports = {
   'mongoatlas': {
-    'host': 'mongodb://ghoster:12345@my-portfolio-shard-00-00-1zgcd.mongodb.net',
+    'host': '',
     'port': process.env.PORT,
     'url': process.env.MONGODB_URI,
     'database': 'mongodb',
