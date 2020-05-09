@@ -1,9 +1,8 @@
 'use strict';
-const axios = require('axios');
 
 const loopback = require('loopback');
 const boot = require('loopback-boot');
-const path = require('path')
+const path = require('path');
 var errorHandler = require('strong-error-handler');
 
 const app = module.exports = loopback();
